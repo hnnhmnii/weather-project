@@ -22,11 +22,17 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: pip install pandas numpy requests
+
       - name: Collect weather data
         run: python collector.py
 
-      - name: Commit updated database
+      - name: Analyse weather data
+        run: python analyze.py
+
+      - name: Commit updated database and results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'Update hourly weather data'
-          file_pattern: weather.db
+          commit_message: 'Update weather data and analysis'
+          file_pattern: weather.db docs/results.json
