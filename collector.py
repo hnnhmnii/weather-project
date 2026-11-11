@@ -1,13 +1,5 @@
 """
 collector.py - pulls weather data for Seri Iskandar from Open-Meteo and stores it in SQLite.
-
-One API call returns hourly data from (now - 6h) to (now + 48h):
-  - rows at or before the current hour  -> 'observations'  (Open-Meteo's best-estimate analysis of what happened)
-  - rows after the current hour         -> 'forecasts'     (tagged with issued_at and lead_hours)
-
-Usage:
-  python collector.py            # run once (use with cron / GitHub Actions)
-  python collector.py --loop     # run forever, once per hour (leave running on a laptop / Raspberry Pi)
 """
 import argparse
 import json
@@ -21,7 +13,7 @@ from urllib.request import urlopen
 LAT, LON = 4.3667, 100.9667            # Seri Iskandar, Perak
 HERE = Path(__file__).parent
 DB = HERE / "weather.db"
-MYT = timezone(timedelta(hours=8))      # Malaysia has no daylight saving
+MYT = timezone(timedelta(hours=8))      # Malaysia time (UTC+8)
 URL = "https://api.open-meteo.com/v1/forecast"
 HOURLY = ["temperature_2m", "relative_humidity_2m", "precipitation",
           "wind_speed_10m", "precipitation_probability"]
@@ -36,7 +28,9 @@ def fetch():
 
 
 def init_db(con):
-    con.executescript((HERE / "schema.sql").read_text())
+    schema_path = HERE / "schema.sql"
+    if schema_path.exists():
+        con.executescript(schema_path.read_text(encoding="utf-8"))
 
 
 def store(con, h):
@@ -78,6 +72,6 @@ if __name__ == "__main__":
         while True:
             try:
                 run_once()
-            except Exception as e:          # network hiccup: log and try next hour
+            except Exception as e:
                 print("fetch failed:", e)
             time.sleep(3600)
