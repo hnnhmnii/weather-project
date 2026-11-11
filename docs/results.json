@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11 16:46",
+ "generated_at": "2026-11-11 17:25",
  "location": "Seri Iskandar, Perak",
  "units": {
   "temperature": "degC",
@@ -8,14 +8,676 @@
   "wind_speed": "km/h"
  },
  "counts": {
-  "observations": 7,
-  "forecasts": 47
+  "observations": 8,
+  "forecasts": 94
  },
  "period": {
   "start": "2026-11-11 18:00:00",
-  "end": "2026-11-12 00:00:00",
-  "days": 0.25
+  "end": "2026-11-12 01:00:00",
+  "days": 0.29
  },
- "matched_pairs": 0,
- "error": "no forecast has reached its target time yet - wait a few hours and run again"
+ "matched_pairs": 1,
+ "overall": {
+  "temperature": {
+   "n": 1,
+   "mae": 0.0,
+   "rmse": 0.0,
+   "bias": 0.0,
+   "r": null
+  },
+  "humidity": {
+   "n": 1,
+   "mae": 0.0,
+   "rmse": 0.0,
+   "bias": 0.0,
+   "r": null
+  },
+  "rainfall": {
+   "n": 1,
+   "mae": 0.0,
+   "rmse": 0.0,
+   "bias": 0.0,
+   "r": null
+  },
+  "wind_speed": {
+   "n": 1,
+   "mae": 0.0,
+   "rmse": 0.0,
+   "bias": 0.0,
+   "r": null
+  }
+ },
+ "by_lead_bucket": {
+  "temperature": {
+   "1-6h": {
+    "n": 1,
+    "mae": 0.0,
+    "rmse": 0.0,
+    "bias": 0.0,
+    "r": null
+   }
+  },
+  "humidity": {
+   "1-6h": {
+    "n": 1,
+    "mae": 0.0,
+    "rmse": 0.0,
+    "bias": 0.0,
+    "r": null
+   }
+  },
+  "rainfall": {
+   "1-6h": {
+    "n": 1,
+    "mae": 0.0,
+    "rmse": 0.0,
+    "bias": 0.0,
+    "r": null
+   }
+  },
+  "wind_speed": {
+   "1-6h": {
+    "n": 1,
+    "mae": 0.0,
+    "rmse": 0.0,
+    "bias": 0.0,
+    "r": null
+   }
+  }
+ },
+ "mae_by_lead_hour": {
+  "temperature": [
+   {
+    "lead": 1,
+    "mae": 0.0
+   }
+  ],
+  "humidity": [
+   {
+    "lead": 1,
+    "mae": 0.0
+   }
+  ],
+  "rainfall": [
+   {
+    "lead": 1,
+    "mae": 0.0
+   }
+  ],
+  "wind_speed": [
+   {
+    "lead": 1,
+    "mae": 0.0
+   }
+  ]
+ },
+ "persistence_baseline": {
+  "temperature": {
+   "persistence_mae": 0.1,
+   "forecast_mae": 0.0,
+   "skill": 1.0
+  },
+  "humidity": {
+   "persistence_mae": 1.0,
+   "forecast_mae": 0.0,
+   "skill": 1.0
+  },
+  "rainfall": {
+   "persistence_mae": 0.0,
+   "forecast_mae": 0.0,
+   "skill": null
+  },
+  "wind_speed": {
+   "persistence_mae": 3.7,
+   "forecast_mae": 0.0,
+   "skill": 1.0
+  }
+ },
+ "bias_corrected": {},
+ "rain_events": {
+  "threshold_obs_mm": 0.1,
+  "threshold_prob_pct": 50,
+  "overall": {
+   "n": 1,
+   "hits": 0,
+   "misses": 0,
+   "false_alarms": 1,
+   "correct_negatives": 0,
+   "accuracy": 0.0,
+   "pod": null,
+   "far": 1.0,
+   "csi": 0.0,
+   "f1": null,
+   "brier": 0.314
+  },
+  "by_lead_bucket": {
+   "1-6h": {
+    "n": 1,
+    "hits": 0,
+    "misses": 0,
+    "false_alarms": 1,
+    "correct_negatives": 0,
+    "accuracy": 0.0,
+    "pod": null,
+    "far": 1.0,
+    "csi": 0.0,
+    "f1": null,
+    "brier": 0.314
+   }
+  }
+ },
+ "series": {
+  "lead_1h": [
+   {
+    "time": "2026-11-12T01:00",
+    "temperature": {
+     "forecast": 24.3,
+     "observed": 24.3
+    },
+    "humidity": {
+     "forecast": 99.0,
+     "observed": 99.0
+    },
+    "rainfall": {
+     "forecast": 0.0,
+     "observed": 0.0
+    },
+    "wind_speed": {
+     "forecast": 3.2,
+     "observed": 3.2
+    },
+    "rain_prob": 56.0
+   }
+  ],
+  "lead_6h": [],
+  "lead_12h": [],
+  "lead_24h": []
+ },
+ "observations": [
+  {
+   "time": "2026-11-11T18:00",
+   "temperature": 25.7,
+   "humidity": 96.0,
+   "rainfall": 1.8,
+   "wind_speed": 4.4
+  },
+  {
+   "time": "2026-11-11T19:00",
+   "temperature": 25.1,
+   "humidity": 98.0,
+   "rainfall": 0.7,
+   "wind_speed": 3.3
+  },
+  {
+   "time": "2026-11-11T20:00",
+   "temperature": 24.6,
+   "humidity": 96.0,
+   "rainfall": 2.2,
+   "wind_speed": 4.5
+  },
+  {
+   "time": "2026-11-11T21:00",
+   "temperature": 24.7,
+   "humidity": 97.0,
+   "rainfall": 2.7,
+   "wind_speed": 2.0
+  },
+  {
+   "time": "2026-11-11T22:00",
+   "temperature": 24.7,
+   "humidity": 97.0,
+   "rainfall": 1.5,
+   "wind_speed": 0.9
+  },
+  {
+   "time": "2026-11-11T23:00",
+   "temperature": 24.7,
+   "humidity": 99.0,
+   "rainfall": 0.4,
+   "wind_speed": 2.5
+  },
+  {
+   "time": "2026-11-12T00:00",
+   "temperature": 24.4,
+   "humidity": 100.0,
+   "rainfall": 0.0,
+   "wind_speed": 6.9
+  },
+  {
+   "time": "2026-11-12T01:00",
+   "temperature": 24.3,
+   "humidity": 99.0,
+   "rainfall": 0.0,
+   "wind_speed": 3.2
+  }
+ ],
+ "latest_forecast": {
+  "issued_at": "2026-11-12 01:00:00",
+  "rows": [
+   {
+    "time": "2026-11-12T02:00",
+    "lead": 1,
+    "temperature": 24.3,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 1.9,
+    "rain_prob": 49.0
+   },
+   {
+    "time": "2026-11-12T03:00",
+    "lead": 2,
+    "temperature": 24.3,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 0.9,
+    "rain_prob": 43.0
+   },
+   {
+    "time": "2026-11-12T04:00",
+    "lead": 3,
+    "temperature": 24.4,
+    "humidity": 96.0,
+    "rainfall": 0.0,
+    "wind_speed": 0.3,
+    "rain_prob": 38.0
+   },
+   {
+    "time": "2026-11-12T05:00",
+    "lead": 4,
+    "temperature": 24.0,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 4.7,
+    "rain_prob": 33.0
+   },
+   {
+    "time": "2026-11-12T06:00",
+    "lead": 5,
+    "temperature": 23.9,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 5.1,
+    "rain_prob": 29.0
+   },
+   {
+    "time": "2026-11-12T07:00",
+    "lead": 6,
+    "temperature": 23.7,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 2.8,
+    "rain_prob": 27.0
+   },
+   {
+    "time": "2026-11-12T08:00",
+    "lead": 7,
+    "temperature": 24.5,
+    "humidity": 97.0,
+    "rainfall": 0.0,
+    "wind_speed": 3.2,
+    "rain_prob": 25.0
+   },
+   {
+    "time": "2026-11-12T09:00",
+    "lead": 8,
+    "temperature": 25.8,
+    "humidity": 91.0,
+    "rainfall": 0.0,
+    "wind_speed": 2.4,
+    "rain_prob": 23.0
+   },
+   {
+    "time": "2026-11-12T10:00",
+    "lead": 9,
+    "temperature": 27.4,
+    "humidity": 87.0,
+    "rainfall": 0.1,
+    "wind_speed": 5.6,
+    "rain_prob": 21.0
+   },
+   {
+    "time": "2026-11-12T11:00",
+    "lead": 10,
+    "temperature": 28.7,
+    "humidity": 81.0,
+    "rainfall": 0.1,
+    "wind_speed": 7.0,
+    "rain_prob": 24.0
+   },
+   {
+    "time": "2026-11-12T12:00",
+    "lead": 11,
+    "temperature": 29.6,
+    "humidity": 76.0,
+    "rainfall": 0.1,
+    "wind_speed": 7.9,
+    "rain_prob": 36.0
+   },
+   {
+    "time": "2026-11-12T13:00",
+    "lead": 12,
+    "temperature": 30.3,
+    "humidity": 72.0,
+    "rainfall": 0.1,
+    "wind_speed": 10.0,
+    "rain_prob": 52.0
+   },
+   {
+    "time": "2026-11-12T14:00",
+    "lead": 13,
+    "temperature": 29.8,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "wind_speed": 7.5,
+    "rain_prob": 67.0
+   },
+   {
+    "time": "2026-11-12T15:00",
+    "lead": 14,
+    "temperature": 30.4,
+    "humidity": 73.0,
+    "rainfall": 0.1,
+    "wind_speed": 7.4,
+    "rain_prob": 80.0
+   },
+   {
+    "time": "2026-11-12T16:00",
+    "lead": 15,
+    "temperature": 27.0,
+    "humidity": 92.0,
+    "rainfall": 2.0,
+    "wind_speed": 9.8,
+    "rain_prob": 91.0
+   },
+   {
+    "time": "2026-11-12T17:00",
+    "lead": 16,
+    "temperature": 26.1,
+    "humidity": 90.0,
+    "rainfall": 1.4,
+    "wind_speed": 5.6,
+    "rain_prob": 98.0
+   },
+   {
+    "time": "2026-11-12T18:00",
+    "lead": 17,
+    "temperature": 25.7,
+    "humidity": 96.0,
+    "rainfall": 3.4,
+    "wind_speed": 2.4,
+    "rain_prob": 100.0
+   },
+   {
+    "time": "2026-11-12T19:00",
+    "lead": 18,
+    "temperature": 25.5,
+    "humidity": 98.0,
+    "rainfall": 0.7,
+    "wind_speed": 3.8,
+    "rain_prob": 97.0
+   },
+   {
+    "time": "2026-11-12T20:00",
+    "lead": 19,
+    "temperature": 25.4,
+    "humidity": 98.0,
+    "rainfall": 0.3,
+    "wind_speed": 5.1,
+    "rain_prob": 90.0
+   },
+   {
+    "time": "2026-11-12T21:00",
+    "lead": 20,
+    "temperature": 25.1,
+    "humidity": 99.0,
+    "rainfall": 0.2,
+    "wind_speed": 4.5,
+    "rain_prob": 74.0
+   },
+   {
+    "time": "2026-11-12T22:00",
+    "lead": 21,
+    "temperature": 24.9,
+    "humidity": 98.0,
+    "rainfall": 0.3,
+    "wind_speed": 7.8,
+    "rain_prob": 54.0
+   },
+   {
+    "time": "2026-11-12T23:00",
+    "lead": 22,
+    "temperature": 24.8,
+    "humidity": 97.0,
+    "rainfall": 0.5,
+    "wind_speed": 7.0,
+    "rain_prob": 39.0
+   },
+   {
+    "time": "2026-11-13T00:00",
+    "lead": 23,
+    "temperature": 24.4,
+    "humidity": 98.0,
+    "rainfall": 0.0,
+    "wind_speed": 8.3,
+    "rain_prob": 34.0
+   },
+   {
+    "time": "2026-11-13T01:00",
+    "lead": 24,
+    "temperature": 24.2,
+    "humidity": 98.0,
+    "rainfall": 0.0,
+    "wind_speed": 6.9,
+    "rain_prob": 35.0
+   },
+   {
+    "time": "2026-11-13T02:00",
+    "lead": 25,
+    "temperature": 24.1,
+    "humidity": 98.0,
+    "rainfall": 0.0,
+    "wind_speed": 7.6,
+    "rain_prob": 37.0
+   },
+   {
+    "time": "2026-11-13T03:00",
+    "lead": 26,
+    "temperature": 23.4,
+    "humidity": 100.0,
+    "rainfall": 3.1,
+    "wind_speed": 1.3,
+    "rain_prob": 41.0
+   },
+   {
+    "time": "2026-11-13T04:00",
+    "lead": 27,
+    "temperature": 23.5,
+    "humidity": 99.0,
+    "rainfall": 2.7,
+    "wind_speed": 7.5,
+    "rain_prob": 46.0
+   },
+   {
+    "time": "2026-11-13T05:00",
+    "lead": 28,
+    "temperature": 23.4,
+    "humidity": 99.0,
+    "rainfall": 1.0,
+    "wind_speed": 2.9,
+    "rain_prob": 47.0
+   },
+   {
+    "time": "2026-11-13T06:00",
+    "lead": 29,
+    "temperature": 23.3,
+    "humidity": 99.0,
+    "rainfall": 0.1,
+    "wind_speed": 3.0,
+    "rain_prob": 41.0
+   },
+   {
+    "time": "2026-11-13T07:00",
+    "lead": 30,
+    "temperature": 23.1,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 4.2,
+    "rain_prob": 32.0
+   },
+   {
+    "time": "2026-11-13T08:00",
+    "lead": 31,
+    "temperature": 23.9,
+    "humidity": 96.0,
+    "rainfall": 0.0,
+    "wind_speed": 3.6,
+    "rain_prob": 24.0
+   },
+   {
+    "time": "2026-11-13T09:00",
+    "lead": 32,
+    "temperature": 25.5,
+    "humidity": 92.0,
+    "rainfall": 0.0,
+    "wind_speed": 1.8,
+    "rain_prob": 19.0
+   },
+   {
+    "time": "2026-11-13T10:00",
+    "lead": 33,
+    "temperature": 27.2,
+    "humidity": 83.0,
+    "rainfall": 0.0,
+    "wind_speed": 4.6,
+    "rain_prob": 16.0
+   },
+   {
+    "time": "2026-11-13T11:00",
+    "lead": 34,
+    "temperature": 28.9,
+    "humidity": 76.0,
+    "rainfall": 0.1,
+    "wind_speed": 4.7,
+    "rain_prob": 18.0
+   },
+   {
+    "time": "2026-11-13T12:00",
+    "lead": 35,
+    "temperature": 30.0,
+    "humidity": 70.0,
+    "rainfall": 0.2,
+    "wind_speed": 6.0,
+    "rain_prob": 30.0
+   },
+   {
+    "time": "2026-11-13T13:00",
+    "lead": 36,
+    "temperature": 30.6,
+    "humidity": 69.0,
+    "rainfall": 0.1,
+    "wind_speed": 6.3,
+    "rain_prob": 47.0
+   },
+   {
+    "time": "2026-11-13T14:00",
+    "lead": 37,
+    "temperature": 30.8,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "wind_speed": 6.3,
+    "rain_prob": 63.0
+   },
+   {
+    "time": "2026-11-13T15:00",
+    "lead": 38,
+    "temperature": 27.6,
+    "humidity": 84.0,
+    "rainfall": 1.9,
+    "wind_speed": 12.1,
+    "rain_prob": 76.0
+   },
+   {
+    "time": "2026-11-13T16:00",
+    "lead": 39,
+    "temperature": 25.8,
+    "humidity": 97.0,
+    "rainfall": 4.8,
+    "wind_speed": 6.2,
+    "rain_prob": 87.0
+   },
+   {
+    "time": "2026-11-13T17:00",
+    "lead": 40,
+    "temperature": 26.5,
+    "humidity": 94.0,
+    "rainfall": 0.9,
+    "wind_speed": 5.9,
+    "rain_prob": 94.0
+   },
+   {
+    "time": "2026-11-13T18:00",
+    "lead": 41,
+    "temperature": 25.4,
+    "humidity": 95.0,
+    "rainfall": 2.3,
+    "wind_speed": 8.0,
+    "rain_prob": 94.0
+   },
+   {
+    "time": "2026-11-13T19:00",
+    "lead": 42,
+    "temperature": 25.1,
+    "humidity": 97.0,
+    "rainfall": 4.1,
+    "wind_speed": 2.1,
+    "rain_prob": 90.0
+   },
+   {
+    "time": "2026-11-13T20:00",
+    "lead": 43,
+    "temperature": 25.1,
+    "humidity": 99.0,
+    "rainfall": 0.2,
+    "wind_speed": 4.4,
+    "rain_prob": 82.0
+   },
+   {
+    "time": "2026-11-13T21:00",
+    "lead": 44,
+    "temperature": 24.9,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 3.5,
+    "rain_prob": 68.0
+   },
+   {
+    "time": "2026-11-13T22:00",
+    "lead": 45,
+    "temperature": 24.3,
+    "humidity": 99.0,
+    "rainfall": 1.4,
+    "wind_speed": 9.3,
+    "rain_prob": 51.0
+   },
+   {
+    "time": "2026-11-13T23:00",
+    "lead": 46,
+    "temperature": 24.1,
+    "humidity": 99.0,
+    "rainfall": 3.9,
+    "wind_speed": 4.9,
+    "rain_prob": 37.0
+   },
+   {
+    "time": "2026-11-14T00:00",
+    "lead": 47,
+    "temperature": 24.2,
+    "humidity": 99.0,
+    "rainfall": 0.7,
+    "wind_speed": 3.7,
+    "rain_prob": 30.0
+   }
+  ]
+ },
+ "rain_alert_next6h": false
 }
