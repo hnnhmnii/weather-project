@@ -1,15 +1,5 @@
 """
 analyze.py - verifies Open-Meteo forecasts against observations and writes docs/results.json
-(the file Aleeya's dashboard reads).
-
-Usage: python analyze.py [--db weather.db] [--out docs/results.json]
-
-Outputs:
-  * MAE / RMSE / bias / correlation per variable, overall and per lead-time bucket and per lead hour
-  * Rain-event verification (accuracy, POD, FAR, CSI, F1, Brier score)
-  * Persistence baseline + skill score (is the forecast better than 'tomorrow = now'?)
-  * Simple bias-corrected forecast (own "forecast" model), trained on first 60% of data, tested on the rest
-  * Time series of forecast vs observed at lead 1h / 6h / 12h / 24h, and the latest 48h forecast
 """
 import argparse
 import json
@@ -24,8 +14,8 @@ VARS = ["temperature", "humidity", "rainfall", "wind_speed"]
 UNITS = {"temperature": "degC", "humidity": "%", "rainfall": "mm", "wind_speed": "km/h"}
 EDGES = [0, 6, 12, 24, 48]
 LABELS = ["1-6h", "7-12h", "13-24h", "25-48h"]
-RAIN_MM = 0.1       # observed rain threshold
-RAIN_PROB = 50      # forecast "rain" if probability >= 50 %
+RAIN_MM = 0.1
+RAIN_PROB = 50
 
 
 def f(x):
@@ -80,7 +70,7 @@ def main(db, out):
         df["bucket"] = pd.cut(df.lead_hours, EDGES, labels=LABELS)
         res["matched_pairs"] = len(df)
         if df.empty:
-            res["error"] = "no forecast has reached its target time yet - wait a few hours and run again"
+            res["error"] = "no forecast has reached its target time yet"
             Path(out).parent.mkdir(parents=True, exist_ok=True)
             Path(out).write_text(json.dumps(res, indent=1))
             print("wrote", out, "(no matched pairs yet)")
@@ -95,20 +85,18 @@ def main(db, out):
             a, p = df[f"{v}_obs"], df[f"{v}_fc"]
             ok = a.notna() & p.notna()
             overall[v] = metrics(p[ok], a[ok])
-            by_bucket[v] = {b: metrics(g[f"{v}_fc"].dropna(), g.loc[g[f"{v}_fc"].notna(), f"{v}_obs"])
+            by_bucket[v] = {str(b): metrics(g[f"{v}_fc"].dropna(), g.loc[g[f"{v}_fc"].notna(), f"{v}_obs"])
                             for b, g in df[ok].groupby("bucket", observed=True)}
             by_lead[v] = [{"lead": int(l), "mae": metrics(g[f"{v}_fc"], g[f"{v}_obs"]).get("mae")}
                           for l, g in df[ok].groupby("lead_hours")]
 
-            # persistence baseline: "future value = value at issue time"
-            pers = df.issued_at.map(base[v])
+            pers = df.issued_at.map(base[v]) if v in base.columns else pd.Series(index=df.index, dtype=float)
             m = ok & pers.notna()
-            pm = metrics(pers[m], a[m])
-            fm = metrics(p[m], a[m])
+            pm = metrics(pers[m], a[m]) if m.sum() > 0 else {}
+            fm = metrics(p[m], a[m]) if m.sum() > 0 else {}
             persist[v] = {"persistence_mae": pm.get("mae"), "forecast_mae": fm.get("mae"),
-                          "skill": f(1 - fm["mae"] / pm["mae"]) if pm.get("mae") else None}
+                          "skill": f(1 - fm["mae"] / pm["mae"]) if pm.get("mae") and pm["mae"] > 0 else None}
 
-            # bias correction per lead bucket (train on first 60 %, test on last 40 %)
             if len(train) and len(test):
                 bias = (train[f"{v}_fc"] - train[f"{v}_obs"]).groupby(train.bucket, observed=True).mean()
                 adj = test[f"{v}_fc"] - test.bucket.map(bias).astype(float).fillna(0)
@@ -124,9 +112,8 @@ def main(db, out):
                    persistence_baseline=persist, bias_corrected=corrected,
                    rain_events={"threshold_obs_mm": RAIN_MM, "threshold_prob_pct": RAIN_PROB,
                                 "overall": rain_scores(df),
-                                "by_lead_bucket": {b: rain_scores(g) for b, g in df.groupby("bucket", observed=True)}})
+                                "by_lead_bucket": {str(b): rain_scores(g) for b, g in df.groupby("bucket", observed=True)}})
 
-        # time series for charts
         series = {}
         for lead in (1, 6, 12, 24):
             d = df[df.lead_hours == lead].sort_values("target_time")
@@ -139,13 +126,13 @@ def main(db, out):
         res["observations"] = [{"time": t.strftime("%Y-%m-%dT%H:%M"), **{v: f(r[v]) for v in VARS}}
                                for t, r in zip(obs.obs_time, obs.to_dict("records"))]
         last = fc[fc.issued_at == fc.issued_at.max()].sort_values("target_time")
-        res["latest_forecast"] = {"issued_at": str(last.issued_at.iloc[0]),
-                                  "rows": [{"time": t.strftime("%Y-%m-%dT%H:%M"), "lead": int(r["lead_hours"]),
-                                            **{v: f(r[v]) for v in VARS}, "rain_prob": f(r["rain_prob"])}
-                                           for t, r in zip(last.target_time, last.to_dict("records"))]}
-        # next 6 h rain alert (nice for the dashboard / bonus hardware idea)
-        nxt = last.head(6)
-        res["rain_alert_next6h"] = bool((nxt.rain_prob >= RAIN_PROB).any() or (nxt.rainfall >= RAIN_MM).any())
+        if not last.empty:
+            res["latest_forecast"] = {"issued_at": str(last.issued_at.iloc[0]),
+                                      "rows": [{"time": t.strftime("%Y-%m-%dT%H:%M"), "lead": int(r["lead_hours"]),
+                                                **{v: f(r[v]) for v in VARS}, "rain_prob": f(r["rain_prob"])}
+                                               for t, r in zip(last.target_time, last.to_dict("records"))]}
+            nxt = last.head(6)
+            res["rain_alert_next6h"] = bool((nxt.rain_prob >= RAIN_PROB).any() or (nxt.rainfall >= RAIN_MM).any())
 
     Path(out).parent.mkdir(parents=True, exist_ok=True)
     Path(out).write_text(json.dumps(res, indent=1))
