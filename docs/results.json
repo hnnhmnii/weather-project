@@ -1,0 +1,21 @@
+{
+ "generated_at": "2026-11-12 00:15",
+ "location": "Seri Iskandar, Perak",
+ "units": {
+  "temperature": "degC",
+  "humidity": "%",
+  "rainfall": "mm",
+  "wind_speed": "km/h"
+ },
+ "counts": {
+  "observations": 7,
+  "forecasts": 47
+ },
+ "period": {
+  "start": "2026-11-11 18:00:00",
+  "end": "2026-11-12 00:00:00",
+  "days": 0.25
+ },
+ "matched_pairs": 0,
+ "error": "no forecast has reached its target time yet - wait a few hours and run again"
+}
