@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14 20:34",
+ "generated_at": "2026-11-15 00:57",
  "location": "Seri Iskandar, Perak",
  "units": {
   "temperature": "degC",
@@ -8,164 +8,164 @@
   "wind_speed": "km/h"
  },
  "counts": {
-  "observations": 61,
-  "forecasts": 470
+  "observations": 65,
+  "forecasts": 517
  },
  "period": {
   "start": "2026-11-11 18:00:00",
-  "end": "2026-11-15 04:00:00",
-  "days": 3.42
+  "end": "2026-11-15 08:00:00",
+  "days": 3.58
  },
- "matched_pairs": 194,
+ "matched_pairs": 211,
  "overall": {
   "temperature": {
-   "n": 194,
-   "mae": 0.904,
-   "rmse": 1.12,
-   "bias": -0.826,
-   "r": 0.932
+   "n": 211,
+   "mae": 0.901,
+   "rmse": 1.112,
+   "bias": -0.827,
+   "r": 0.93
   },
   "humidity": {
-   "n": 194,
-   "mae": 2.474,
-   "rmse": 4.088,
-   "bias": 1.856,
-   "r": 0.927
+   "n": 211,
+   "mae": 2.806,
+   "rmse": 4.256,
+   "bias": 2.246,
+   "r": 0.917
   },
   "rainfall": {
-   "n": 194,
-   "mae": 0.668,
-   "rmse": 1.355,
-   "bias": -0.059,
-   "r": 0.557
+   "n": 211,
+   "mae": 0.694,
+   "rmse": 1.375,
+   "bias": -0.1,
+   "r": 0.528
   },
   "wind_speed": {
-   "n": 194,
-   "mae": 2.595,
-   "rmse": 3.346,
-   "bias": -0.922,
-   "r": 0.293
+   "n": 211,
+   "mae": 2.53,
+   "rmse": 3.258,
+   "bias": -0.985,
+   "r": 0.295
   }
  },
  "by_lead_bucket": {
   "temperature": {
    "1-6h": {
-    "n": 45,
-    "mae": 0.789,
-    "rmse": 0.966,
-    "bias": -0.691,
-    "r": 0.944
+    "n": 50,
+    "mae": 0.762,
+    "rmse": 0.938,
+    "bias": -0.67,
+    "r": 0.943
    },
    "7-12h": {
-    "n": 35,
-    "mae": 0.9,
-    "rmse": 1.113,
-    "bias": -0.883,
-    "r": 0.93
+    "n": 38,
+    "mae": 0.879,
+    "rmse": 1.092,
+    "bias": -0.858,
+    "r": 0.928
    },
    "13-24h": {
-    "n": 46,
-    "mae": 0.941,
-    "rmse": 1.069,
-    "bias": -0.92,
-    "r": 0.938
+    "n": 54,
+    "mae": 0.961,
+    "rmse": 1.084,
+    "bias": -0.943,
+    "r": 0.931
    },
    "25-48h": {
-    "n": 68,
-    "mae": 0.957,
-    "rmse": 1.244,
-    "bias": -0.822,
-    "r": 0.925
+    "n": 69,
+    "mae": 0.968,
+    "rmse": 1.251,
+    "bias": -0.835,
+    "r": 0.924
    }
   },
   "humidity": {
    "1-6h": {
-    "n": 45,
-    "mae": 2.689,
-    "rmse": 4.219,
-    "bias": 1.844,
-    "r": 0.923
+    "n": 50,
+    "mae": 2.96,
+    "rmse": 4.313,
+    "bias": 2.24,
+    "r": 0.914
    },
    "7-12h": {
-    "n": 35,
-    "mae": 3.0,
-    "rmse": 4.365,
-    "bias": 2.714,
-    "r": 0.939
+    "n": 38,
+    "mae": 3.368,
+    "rmse": 4.583,
+    "bias": 3.105,
+    "r": 0.931
    },
    "13-24h": {
-    "n": 46,
-    "mae": 1.63,
-    "rmse": 2.172,
-    "bias": 1.326,
-    "r": 0.978
+    "n": 54,
+    "mae": 2.204,
+    "rmse": 2.838,
+    "bias": 1.944,
+    "r": 0.954
    },
    "25-48h": {
-    "n": 68,
-    "mae": 2.632,
-    "rmse": 4.785,
-    "bias": 1.779,
-    "r": 0.901
+    "n": 69,
+    "mae": 2.855,
+    "rmse": 4.903,
+    "bias": 2.014,
+    "r": 0.895
    }
   },
   "rainfall": {
    "1-6h": {
-    "n": 45,
-    "mae": 0.616,
-    "rmse": 1.315,
-    "bias": -0.256,
-    "r": 0.621
+    "n": 50,
+    "mae": 0.676,
+    "rmse": 1.354,
+    "bias": -0.212,
+    "r": 0.556
    },
    "7-12h": {
-    "n": 35,
-    "mae": 0.774,
-    "rmse": 1.456,
-    "bias": 0.266,
-    "r": 0.313
+    "n": 38,
+    "mae": 0.805,
+    "rmse": 1.487,
+    "bias": 0.153,
+    "r": 0.259
    },
    "13-24h": {
-    "n": 46,
-    "mae": 0.548,
-    "rmse": 1.074,
-    "bias": -0.23,
-    "r": 0.701
+    "n": 54,
+    "mae": 0.6,
+    "rmse": 1.156,
+    "bias": -0.33,
+    "r": 0.638
    },
    "25-48h": {
-    "n": 68,
-    "mae": 0.729,
-    "rmse": 1.491,
-    "bias": 0.021,
-    "r": 0.597
+    "n": 69,
+    "mae": 0.719,
+    "rmse": 1.48,
+    "bias": 0.02,
+    "r": 0.598
    }
   },
   "wind_speed": {
    "1-6h": {
-    "n": 45,
-    "mae": 1.864,
-    "rmse": 2.587,
-    "bias": -0.736,
-    "r": 0.556
-   },
-   "7-12h": {
-    "n": 35,
-    "mae": 2.277,
-    "rmse": 2.96,
-    "bias": -1.083,
+    "n": 50,
+    "mae": 1.792,
+    "rmse": 2.484,
+    "bias": -0.76,
     "r": 0.553
    },
+   "7-12h": {
+    "n": 38,
+    "mae": 2.187,
+    "rmse": 2.846,
+    "bias": -1.113,
+    "r": 0.569
+   },
    "13-24h": {
-    "n": 46,
-    "mae": 2.535,
-    "rmse": 3.228,
-    "bias": 0.152,
-    "r": 0.266
+    "n": 54,
+    "mae": 2.5,
+    "rmse": 3.131,
+    "bias": -0.119,
+    "r": 0.247
    },
    "25-48h": {
-    "n": 68,
-    "mae": 3.284,
-    "rmse": 3.995,
-    "bias": -1.69,
-    "r": 0.002
+    "n": 69,
+    "mae": 3.277,
+    "rmse": 3.983,
+    "bias": -1.755,
+    "r": -0.005
    }
   }
  },
@@ -173,39 +173,39 @@
   "temperature": [
    {
     "lead": 1,
-    "mae": 1.143
+    "mae": 1.012
    },
    {
     "lead": 2,
-    "mae": 0.971
+    "mae": 0.925
    },
    {
     "lead": 3,
-    "mae": 0.55
+    "mae": 0.567
    },
    {
     "lead": 4,
-    "mae": 0.9
+    "mae": 0.833
    },
    {
     "lead": 5,
-    "mae": 0.637
+    "mae": 0.65
    },
    {
     "lead": 6,
-    "mae": 0.571
+    "mae": 0.6
    },
    {
     "lead": 7,
-    "mae": 0.771
+    "mae": 0.788
    },
    {
     "lead": 8,
-    "mae": 1.14
+    "mae": 1.05
    },
    {
     "lead": 9,
-    "mae": 0.96
+    "mae": 0.817
    },
    {
     "lead": 10,
@@ -213,27 +213,27 @@
    },
    {
     "lead": 11,
-    "mae": 0.767
-   },
-   {
-    "lead": 12,
     "mae": 0.8
    },
    {
-    "lead": 13,
-    "mae": 1.06
+    "lead": 12,
+    "mae": 0.817
    },
    {
-    "lead": 14,
+    "lead": 13,
     "mae": 1.1
    },
    {
+    "lead": 14,
+    "mae": 1.14
+   },
+   {
     "lead": 15,
-    "mae": 1.267
+    "mae": 1.175
    },
    {
     "lead": 16,
-    "mae": 1.2
+    "mae": 1.04
    },
    {
     "lead": 17,
@@ -241,27 +241,27 @@
    },
    {
     "lead": 18,
-    "mae": 0.925
+    "mae": 0.975
    },
    {
     "lead": 19,
-    "mae": 0.85
+    "mae": 0.875
    },
    {
     "lead": 20,
-    "mae": 0.633
+    "mae": 0.825
    },
    {
     "lead": 21,
-    "mae": 0.55
+    "mae": 0.74
    },
    {
     "lead": 22,
-    "mae": 0.6
+    "mae": 0.72
    },
    {
     "lead": 23,
-    "mae": 0.725
+    "mae": 0.64
    },
    {
     "lead": 24,
@@ -349,105 +349,105 @@
    },
    {
     "lead": 45,
-    "mae": 1.15
-   },
-   {
-    "lead": 46,
     "mae": 1.2
    },
    {
+    "lead": 46,
+    "mae": 1.225
+   },
+   {
     "lead": 47,
-    "mae": 1.267
+    "mae": 1.3
    }
   ],
   "humidity": [
    {
     "lead": 1,
-    "mae": 3.857
+    "mae": 3.625
    },
    {
     "lead": 2,
-    "mae": 3.429
+    "mae": 3.375
    },
    {
     "lead": 3,
-    "mae": 1.25
+    "mae": 2.0
    },
    {
     "lead": 4,
-    "mae": 3.875
+    "mae": 4.111
    },
    {
     "lead": 5,
-    "mae": 2.125
+    "mae": 2.5
    },
    {
     "lead": 6,
-    "mae": 1.714
+    "mae": 2.125
    },
    {
     "lead": 7,
-    "mae": 2.0
+    "mae": 2.5
    },
    {
     "lead": 8,
-    "mae": 4.8
+    "mae": 4.5
    },
    {
     "lead": 9,
-    "mae": 4.0
+    "mae": 3.333
    },
    {
     "lead": 10,
-    "mae": 3.167
+    "mae": 3.667
    },
    {
     "lead": 11,
-    "mae": 2.833
+    "mae": 3.833
    },
    {
     "lead": 12,
-    "mae": 1.833
-   },
-   {
-    "lead": 13,
-    "mae": 2.4
-   },
-   {
-    "lead": 14,
-    "mae": 2.25
-   },
-   {
-    "lead": 15,
     "mae": 2.667
    },
    {
+    "lead": 13,
+    "mae": 2.833
+   },
+   {
+    "lead": 14,
+    "mae": 2.8
+   },
+   {
+    "lead": 15,
+    "mae": 2.5
+   },
+   {
     "lead": 16,
-    "mae": 1.5
+    "mae": 1.4
    },
    {
     "lead": 17,
-    "mae": 1.25
-   },
-   {
-    "lead": 18,
-    "mae": 0.75
-   },
-   {
-    "lead": 19,
-    "mae": 1.0
-   },
-   {
-    "lead": 20,
-    "mae": 1.667
-   },
-   {
-    "lead": 21,
     "mae": 2.0
    },
    {
+    "lead": 18,
+    "mae": 2.25
+   },
+   {
+    "lead": 19,
+    "mae": 2.25
+   },
+   {
+    "lead": 20,
+    "mae": 2.5
+   },
+   {
+    "lead": 21,
+    "mae": 2.8
+   },
+   {
     "lead": 22,
-    "mae": 1.75
+    "mae": 2.4
    },
    {
     "lead": 23,
@@ -535,57 +535,57 @@
    },
    {
     "lead": 44,
-    "mae": 2.0
+    "mae": 2.75
    },
    {
     "lead": 45,
-    "mae": 2.0
+    "mae": 3.5
    },
    {
     "lead": 46,
-    "mae": 2.25
+    "mae": 3.5
    },
    {
     "lead": 47,
-    "mae": 1.0
+    "mae": 1.75
    }
   ],
   "rainfall": [
    {
     "lead": 1,
-    "mae": 0.157
+    "mae": 0.15
    },
    {
     "lead": 2,
-    "mae": 0.129
+    "mae": 0.425
    },
    {
     "lead": 3,
-    "mae": 0.225
+    "mae": 0.3
    },
    {
     "lead": 4,
-    "mae": 1.738
+    "mae": 1.833
    },
    {
     "lead": 5,
-    "mae": 0.487
+    "mae": 0.475
    },
    {
     "lead": 6,
-    "mae": 0.871
+    "mae": 0.775
    },
    {
     "lead": 7,
-    "mae": 0.8
+    "mae": 0.7
    },
    {
     "lead": 8,
-    "mae": 0.56
+    "mae": 0.55
    },
    {
     "lead": 9,
-    "mae": 0.34
+    "mae": 0.8
    },
    {
     "lead": 10,
@@ -597,23 +597,23 @@
    },
    {
     "lead": 12,
-    "mae": 1.1
+    "mae": 1.083
    },
    {
     "lead": 13,
-    "mae": 0.66
+    "mae": 0.567
    },
    {
     "lead": 14,
-    "mae": 0.25
+    "mae": 0.2
    },
    {
     "lead": 15,
-    "mae": 0.233
+    "mae": 0.3
    },
    {
     "lead": 16,
-    "mae": 0.4
+    "mae": 0.94
    },
    {
     "lead": 17,
@@ -625,23 +625,23 @@
    },
    {
     "lead": 19,
-    "mae": 0.8
+    "mae": 0.775
    },
    {
     "lead": 20,
-    "mae": 1.867
+    "mae": 1.425
    },
    {
     "lead": 21,
-    "mae": 0.6
+    "mae": 0.48
    },
    {
     "lead": 22,
-    "mae": 0.375
+    "mae": 0.4
    },
    {
     "lead": 23,
-    "mae": 0.15
+    "mae": 0.72
    },
    {
     "lead": 24,
@@ -733,105 +733,105 @@
    },
    {
     "lead": 46,
-    "mae": 0.15
+    "mae": 0.125
    },
    {
     "lead": 47,
-    "mae": 1.0
+    "mae": 0.775
    }
   ],
   "wind_speed": [
    {
     "lead": 1,
-    "mae": 1.543
+    "mae": 1.525
    },
    {
     "lead": 2,
-    "mae": 1.514
+    "mae": 1.425
    },
    {
     "lead": 3,
-    "mae": 2.6
+    "mae": 2.578
    },
    {
     "lead": 4,
-    "mae": 2.075
+    "mae": 1.978
    },
    {
     "lead": 5,
-    "mae": 1.85
+    "mae": 1.663
    },
    {
     "lead": 6,
-    "mae": 1.471
+    "mae": 1.463
    },
    {
     "lead": 7,
-    "mae": 2.1
+    "mae": 1.85
    },
    {
     "lead": 8,
-    "mae": 2.22
+    "mae": 2.267
    },
    {
     "lead": 9,
-    "mae": 1.46
+    "mae": 1.4
    },
    {
     "lead": 10,
-    "mae": 2.867
+    "mae": 3.233
    },
    {
     "lead": 11,
-    "mae": 2.067
+    "mae": 1.933
    },
    {
     "lead": 12,
-    "mae": 2.833
+    "mae": 2.55
    },
    {
     "lead": 13,
-    "mae": 2.44
+    "mae": 2.6
    },
    {
     "lead": 14,
-    "mae": 2.225
+    "mae": 2.06
    },
    {
     "lead": 15,
-    "mae": 3.1
+    "mae": 3.425
    },
    {
     "lead": 16,
-    "mae": 1.325
+    "mae": 1.38
    },
    {
     "lead": 17,
-    "mae": 1.7
+    "mae": 2.25
    },
    {
     "lead": 18,
-    "mae": 0.95
+    "mae": 1.1
    },
    {
     "lead": 19,
-    "mae": 2.025
+    "mae": 1.95
    },
    {
     "lead": 20,
-    "mae": 1.267
+    "mae": 1.5
    },
    {
     "lead": 21,
-    "mae": 3.4
+    "mae": 2.82
    },
    {
     "lead": 22,
-    "mae": 4.6
+    "mae": 4.02
    },
    {
     "lead": 23,
-    "mae": 3.6
+    "mae": 3.02
    },
    {
     "lead": 24,
@@ -915,130 +915,130 @@
    },
    {
     "lead": 44,
-    "mae": 4.05
+    "mae": 4.6
    },
    {
     "lead": 45,
-    "mae": 2.55
+    "mae": 2.35
    },
    {
     "lead": 46,
-    "mae": 4.25
+    "mae": 3.825
    },
    {
     "lead": 47,
-    "mae": 4.167
+    "mae": 3.9
    }
   ]
  },
  "persistence_baseline": {
   "temperature": {
-   "persistence_mae": 2.19,
-   "forecast_mae": 0.904,
-   "skill": 0.587
+   "persistence_mae": 2.082,
+   "forecast_mae": 0.901,
+   "skill": 0.567
   },
   "humidity": {
-   "persistence_mae": 9.33,
-   "forecast_mae": 2.474,
-   "skill": 0.735
+   "persistence_mae": 8.768,
+   "forecast_mae": 2.806,
+   "skill": 0.68
   },
   "rainfall": {
-   "persistence_mae": 0.901,
-   "forecast_mae": 0.668,
-   "skill": 0.259
+   "persistence_mae": 0.922,
+   "forecast_mae": 0.694,
+   "skill": 0.247
   },
   "wind_speed": {
-   "persistence_mae": 3.101,
-   "forecast_mae": 2.595,
-   "skill": 0.163
+   "persistence_mae": 2.94,
+   "forecast_mae": 2.53,
+   "skill": 0.139
   }
  },
  "bias_corrected": {
   "temperature": {
-   "raw_mae": 0.966,
-   "corrected_mae": 0.741
+   "raw_mae": 0.951,
+   "corrected_mae": 0.693
   },
   "humidity": {
-   "raw_mae": 2.955,
-   "corrected_mae": 2.928
+   "raw_mae": 3.538,
+   "corrected_mae": 3.114
   },
   "rainfall": {
-   "raw_mae": 0.718,
-   "corrected_mae": 0.804
+   "raw_mae": 0.761,
+   "corrected_mae": 0.842
   },
   "wind_speed": {
-   "raw_mae": 2.649,
-   "corrected_mae": 2.715
+   "raw_mae": 2.51,
+   "corrected_mae": 2.536
   }
  },
  "rain_events": {
   "threshold_obs_mm": 0.1,
   "threshold_prob_pct": 50,
   "overall": {
-   "n": 194,
+   "n": 211,
    "hits": 62,
-   "misses": 49,
-   "false_alarms": 25,
-   "correct_negatives": 58,
-   "accuracy": 0.619,
-   "pod": 0.559,
-   "far": 0.287,
-   "csi": 0.456,
-   "f1": 0.626,
-   "brier": 0.203
+   "misses": 58,
+   "false_alarms": 26,
+   "correct_negatives": 65,
+   "accuracy": 0.602,
+   "pod": 0.517,
+   "far": 0.295,
+   "csi": 0.425,
+   "f1": 0.596,
+   "brier": 0.21
   },
   "by_lead_bucket": {
    "1-6h": {
-    "n": 45,
+    "n": 50,
     "hits": 18,
-    "misses": 9,
+    "misses": 12,
     "false_alarms": 3,
-    "correct_negatives": 15,
-    "accuracy": 0.733,
-    "pod": 0.667,
+    "correct_negatives": 17,
+    "accuracy": 0.7,
+    "pod": 0.6,
     "far": 0.143,
-    "csi": 0.6,
-    "f1": 0.75,
-    "brier": 0.175
+    "csi": 0.545,
+    "f1": 0.706,
+    "brier": 0.186
    },
    "7-12h": {
-    "n": 35,
+    "n": 38,
     "hits": 12,
-    "misses": 6,
+    "misses": 7,
     "false_alarms": 5,
-    "correct_negatives": 12,
-    "accuracy": 0.686,
-    "pod": 0.667,
+    "correct_negatives": 14,
+    "accuracy": 0.684,
+    "pod": 0.632,
     "far": 0.294,
-    "csi": 0.522,
-    "f1": 0.686,
-    "brier": 0.176
+    "csi": 0.5,
+    "f1": 0.667,
+    "brier": 0.184
    },
    "13-24h": {
-    "n": 46,
+    "n": 54,
     "hits": 15,
-    "misses": 11,
+    "misses": 16,
     "false_alarms": 10,
-    "correct_negatives": 10,
-    "accuracy": 0.543,
-    "pod": 0.577,
+    "correct_negatives": 13,
+    "accuracy": 0.519,
+    "pod": 0.484,
     "far": 0.4,
-    "csi": 0.417,
-    "f1": 0.588,
-    "brier": 0.245
+    "csi": 0.366,
+    "f1": 0.536,
+    "brier": 0.252
    },
    "25-48h": {
-    "n": 68,
+    "n": 69,
     "hits": 17,
     "misses": 23,
-    "false_alarms": 7,
+    "false_alarms": 8,
     "correct_negatives": 21,
-    "accuracy": 0.559,
+    "accuracy": 0.551,
     "pod": 0.425,
-    "far": 0.292,
-    "csi": 0.362,
-    "f1": 0.531,
-    "brier": 0.206
+    "far": 0.32,
+    "csi": 0.354,
+    "f1": 0.523,
+    "brier": 0.209
    }
   }
  },
@@ -1183,6 +1183,26 @@
      "observed": 2.7
     },
     "rain_prob": 66.0
+   },
+   {
+    "time": "2026-11-15T05:00",
+    "temperature": {
+     "forecast": 25.7,
+     "observed": 25.6
+    },
+    "humidity": {
+     "forecast": 96.0,
+     "observed": 94.0
+    },
+    "rainfall": {
+     "forecast": 0.2,
+     "observed": 0.1
+    },
+    "wind_speed": {
+     "forecast": 3.1,
+     "observed": 4.5
+    },
+    "rain_prob": 47.0
    }
   ],
   "lead_6h": [
@@ -1325,6 +1345,26 @@
      "observed": 2.9
     },
     "rain_prob": 80.0
+   },
+   {
+    "time": "2026-11-15T05:00",
+    "temperature": {
+     "forecast": 24.8,
+     "observed": 25.6
+    },
+    "humidity": {
+     "forecast": 99.0,
+     "observed": 94.0
+    },
+    "rainfall": {
+     "forecast": 0.0,
+     "observed": 0.1
+    },
+    "wind_speed": {
+     "forecast": 3.1,
+     "observed": 4.5
+    },
+    "rain_prob": 47.0
    }
   ],
   "lead_12h": [
@@ -1432,19 +1472,19 @@
     "time": "2026-11-15T04:00",
     "temperature": {
      "forecast": 24.4,
-     "observed": 25.7
+     "observed": 25.8
     },
     "humidity": {
      "forecast": 99.0,
-     "observed": 98.0
+     "observed": 93.0
     },
     "rainfall": {
      "forecast": 0.0,
-     "observed": 0.1
+     "observed": 0.0
     },
     "wind_speed": {
      "forecast": 4.1,
-     "observed": 0.3
+     "observed": 2.0
     },
     "rain_prob": 47.0
    }
@@ -1922,450 +1962,478 @@
   {
    "time": "2026-11-15T02:00",
    "temperature": 25.9,
-   "humidity": 97.0,
+   "humidity": 94.0,
    "rainfall": 0.0,
-   "wind_speed": 1.6
+   "wind_speed": 3.8
   },
   {
    "time": "2026-11-15T03:00",
-   "temperature": 25.6,
-   "humidity": 99.0,
+   "temperature": 25.8,
+   "humidity": 93.0,
    "rainfall": 0.0,
-   "wind_speed": 2.2
+   "wind_speed": 1.4
   },
   {
    "time": "2026-11-15T04:00",
-   "temperature": 25.7,
-   "humidity": 98.0,
+   "temperature": 25.8,
+   "humidity": 93.0,
+   "rainfall": 0.0,
+   "wind_speed": 2.0
+  },
+  {
+   "time": "2026-11-15T05:00",
+   "temperature": 25.6,
+   "humidity": 94.0,
    "rainfall": 0.1,
-   "wind_speed": 0.3
+   "wind_speed": 4.5
+  },
+  {
+   "time": "2026-11-15T06:00",
+   "temperature": 25.6,
+   "humidity": 93.0,
+   "rainfall": 0.0,
+   "wind_speed": 2.1
+  },
+  {
+   "time": "2026-11-15T07:00",
+   "temperature": 25.3,
+   "humidity": 94.0,
+   "rainfall": 0.5,
+   "wind_speed": 4.6
+  },
+  {
+   "time": "2026-11-15T08:00",
+   "temperature": 25.1,
+   "humidity": 96.0,
+   "rainfall": 3.1,
+   "wind_speed": 2.1
   }
  ],
  "latest_forecast": {
-  "issued_at": "2026-11-15 04:00:00",
+  "issued_at": "2026-11-15 08:00:00",
   "rows": [
    {
-    "time": "2026-11-15T05:00",
-    "lead": 1,
-    "temperature": 25.7,
-    "humidity": 96.0,
-    "rainfall": 0.2,
-    "wind_speed": 3.1,
-    "rain_prob": 47.0
-   },
-   {
-    "time": "2026-11-15T06:00",
-    "lead": 2,
-    "temperature": 25.0,
-    "humidity": 96.0,
-    "rainfall": 2.5,
-    "wind_speed": 1.3,
-    "rain_prob": 45.0
-   },
-   {
-    "time": "2026-11-15T07:00",
-    "lead": 3,
-    "temperature": 24.6,
-    "humidity": 99.0,
-    "rainfall": 1.4,
-    "wind_speed": 5.4,
-    "rain_prob": 43.0
-   },
-   {
-    "time": "2026-11-15T08:00",
-    "lead": 4,
-    "temperature": 25.0,
-    "humidity": 96.0,
-    "rainfall": 0.5,
-    "wind_speed": 3.1,
-    "rain_prob": 39.0
-   },
-   {
     "time": "2026-11-15T09:00",
-    "lead": 5,
-    "temperature": 25.5,
-    "humidity": 94.0,
-    "rainfall": 0.8,
-    "wind_speed": 4.4,
+    "lead": 1,
+    "temperature": 25.8,
+    "humidity": 95.0,
+    "rainfall": 0.6,
+    "wind_speed": 4.5,
     "rain_prob": 30.0
    },
    {
     "time": "2026-11-15T10:00",
-    "lead": 6,
-    "temperature": 26.8,
+    "lead": 2,
+    "temperature": 27.0,
     "humidity": 90.0,
     "rainfall": 0.1,
-    "wind_speed": 3.9,
+    "wind_speed": 3.7,
     "rain_prob": 19.0
    },
    {
     "time": "2026-11-15T11:00",
-    "lead": 7,
-    "temperature": 28.0,
-    "humidity": 86.0,
-    "rainfall": 0.2,
-    "wind_speed": 6.2,
+    "lead": 3,
+    "temperature": 28.2,
+    "humidity": 85.0,
+    "rainfall": 0.1,
+    "wind_speed": 6.6,
     "rain_prob": 18.0
    },
    {
     "time": "2026-11-15T12:00",
-    "lead": 8,
-    "temperature": 28.8,
-    "humidity": 83.0,
-    "rainfall": 0.3,
-    "wind_speed": 2.7,
+    "lead": 4,
+    "temperature": 28.9,
+    "humidity": 81.0,
+    "rainfall": 0.4,
+    "wind_speed": 7.6,
     "rain_prob": 37.0
    },
    {
     "time": "2026-11-15T13:00",
-    "lead": 9,
-    "temperature": 28.7,
-    "humidity": 83.0,
-    "rainfall": 0.8,
-    "wind_speed": 8.1,
+    "lead": 5,
+    "temperature": 27.4,
+    "humidity": 92.0,
+    "rainfall": 1.8,
+    "wind_speed": 7.8,
     "rain_prob": 67.0
    },
    {
     "time": "2026-11-15T14:00",
-    "lead": 10,
-    "temperature": 27.1,
-    "humidity": 88.0,
-    "rainfall": 8.1,
-    "wind_speed": 13.0,
+    "lead": 6,
+    "temperature": 25.8,
+    "humidity": 91.0,
+    "rainfall": 13.6,
+    "wind_speed": 10.5,
     "rain_prob": 90.0
    },
    {
     "time": "2026-11-15T15:00",
-    "lead": 11,
-    "temperature": 26.5,
+    "lead": 7,
+    "temperature": 26.8,
     "humidity": 95.0,
-    "rainfall": 9.5,
-    "wind_speed": 13.7,
+    "rainfall": 2.3,
+    "wind_speed": 8.1,
     "rain_prob": 98.0
    },
    {
     "time": "2026-11-15T16:00",
-    "lead": 12,
-    "temperature": 26.4,
+    "lead": 8,
+    "temperature": 25.9,
     "humidity": 95.0,
-    "rainfall": 1.5,
-    "wind_speed": 5.9,
+    "rainfall": 5.1,
+    "wind_speed": 6.3,
     "rain_prob": 99.0
    },
    {
     "time": "2026-11-15T17:00",
-    "lead": 13,
+    "lead": 9,
     "temperature": 25.8,
     "humidity": 95.0,
-    "rainfall": 4.7,
-    "wind_speed": 4.9,
+    "rainfall": 4.3,
+    "wind_speed": 5.6,
     "rain_prob": 98.0
    },
    {
     "time": "2026-11-15T18:00",
-    "lead": 14,
-    "temperature": 25.5,
-    "humidity": 97.0,
-    "rainfall": 2.2,
-    "wind_speed": 6.0,
+    "lead": 10,
+    "temperature": 25.6,
+    "humidity": 96.0,
+    "rainfall": 1.3,
+    "wind_speed": 4.8,
     "rain_prob": 98.0
    },
    {
     "time": "2026-11-15T19:00",
-    "lead": 15,
+    "lead": 11,
     "temperature": 25.2,
-    "humidity": 97.0,
-    "rainfall": 0.7,
-    "wind_speed": 3.8,
+    "humidity": 98.0,
+    "rainfall": 0.6,
+    "wind_speed": 3.4,
     "rain_prob": 96.0
    },
    {
     "time": "2026-11-15T20:00",
-    "lead": 16,
-    "temperature": 25.3,
-    "humidity": 96.0,
+    "lead": 12,
+    "temperature": 25.2,
+    "humidity": 98.0,
     "rainfall": 0.2,
-    "wind_speed": 1.8,
+    "wind_speed": 3.9,
     "rain_prob": 94.0
    },
    {
     "time": "2026-11-15T21:00",
-    "lead": 17,
+    "lead": 13,
     "temperature": 25.4,
-    "humidity": 95.0,
-    "rainfall": 0.0,
-    "wind_speed": 0.5,
+    "humidity": 96.0,
+    "rainfall": 0.1,
+    "wind_speed": 0.3,
     "rain_prob": 90.0
    },
    {
     "time": "2026-11-15T22:00",
-    "lead": 18,
+    "lead": 14,
     "temperature": 25.2,
     "humidity": 98.0,
     "rainfall": 0.1,
-    "wind_speed": 2.3,
+    "wind_speed": 3.9,
     "rain_prob": 86.0
    },
    {
     "time": "2026-11-15T23:00",
-    "lead": 19,
+    "lead": 15,
     "temperature": 25.0,
     "humidity": 98.0,
     "rainfall": 0.1,
-    "wind_speed": 5.2,
+    "wind_speed": 6.7,
     "rain_prob": 82.0
    },
    {
     "time": "2026-11-16T00:00",
-    "lead": 20,
-    "temperature": 25.0,
-    "humidity": 97.0,
-    "rainfall": 0.1,
-    "wind_speed": 0.6,
+    "lead": 16,
+    "temperature": 24.5,
+    "humidity": 100.0,
+    "rainfall": 0.6,
+    "wind_speed": 4.7,
     "rain_prob": 80.0
    },
    {
     "time": "2026-11-16T01:00",
-    "lead": 21,
-    "temperature": 24.1,
+    "lead": 17,
+    "temperature": 24.6,
     "humidity": 99.0,
-    "rainfall": 1.5,
-    "wind_speed": 8.1,
+    "rainfall": 0.5,
+    "wind_speed": 3.9,
     "rain_prob": 79.0
    },
    {
     "time": "2026-11-16T02:00",
-    "lead": 22,
-    "temperature": 24.2,
+    "lead": 18,
+    "temperature": 24.4,
     "humidity": 99.0,
-    "rainfall": 1.4,
-    "wind_speed": 4.5,
+    "rainfall": 0.1,
+    "wind_speed": 1.9,
     "rain_prob": 76.0
    },
    {
     "time": "2026-11-16T03:00",
-    "lead": 23,
-    "temperature": 24.2,
+    "lead": 19,
+    "temperature": 24.4,
     "humidity": 99.0,
-    "rainfall": 0.2,
-    "wind_speed": 3.2,
+    "rainfall": 0.0,
+    "wind_speed": 0.6,
     "rain_prob": 71.0
    },
    {
     "time": "2026-11-16T04:00",
-    "lead": 24,
-    "temperature": 24.1,
+    "lead": 20,
+    "temperature": 24.5,
     "humidity": 99.0,
-    "rainfall": 0.0,
-    "wind_speed": 3.4,
+    "rainfall": 0.2,
+    "wind_speed": 3.6,
     "rain_prob": 65.0
    },
    {
     "time": "2026-11-16T05:00",
-    "lead": 25,
-    "temperature": 24.1,
+    "lead": 21,
+    "temperature": 24.4,
     "humidity": 99.0,
-    "rainfall": 0.0,
-    "wind_speed": 2.7,
+    "rainfall": 0.5,
+    "wind_speed": 1.5,
     "rain_prob": 57.0
    },
    {
     "time": "2026-11-16T06:00",
-    "lead": 26,
-    "temperature": 24.0,
+    "lead": 22,
+    "temperature": 24.3,
     "humidity": 99.0,
-    "rainfall": 0.2,
-    "wind_speed": 6.3,
+    "rainfall": 0.7,
+    "wind_speed": 4.3,
     "rain_prob": 46.0
    },
    {
     "time": "2026-11-16T07:00",
-    "lead": 27,
-    "temperature": 24.0,
+    "lead": 23,
+    "temperature": 24.4,
     "humidity": 99.0,
-    "rainfall": 0.1,
-    "wind_speed": 2.1,
+    "rainfall": 1.1,
+    "wind_speed": 1.5,
     "rain_prob": 32.0
    },
    {
     "time": "2026-11-16T08:00",
-    "lead": 28,
-    "temperature": 24.4,
-    "humidity": 98.0,
-    "rainfall": 0.0,
-    "wind_speed": 0.9,
+    "lead": 24,
+    "temperature": 24.6,
+    "humidity": 99.0,
+    "rainfall": 0.4,
+    "wind_speed": 3.6,
     "rain_prob": 22.0
    },
    {
     "time": "2026-11-16T09:00",
-    "lead": 29,
-    "temperature": 25.2,
-    "humidity": 95.0,
-    "rainfall": 0.0,
-    "wind_speed": 2.8,
+    "lead": 25,
+    "temperature": 25.6,
+    "humidity": 94.0,
+    "rainfall": 0.1,
+    "wind_speed": 3.2,
     "rain_prob": 14.0
    },
    {
     "time": "2026-11-16T10:00",
-    "lead": 30,
-    "temperature": 27.0,
-    "humidity": 86.0,
+    "lead": 26,
+    "temperature": 27.2,
+    "humidity": 89.0,
     "rainfall": 0.0,
-    "wind_speed": 3.8,
+    "wind_speed": 1.8,
     "rain_prob": 10.0
    },
    {
     "time": "2026-11-16T11:00",
-    "lead": 31,
-    "temperature": 28.8,
-    "humidity": 78.0,
-    "rainfall": 0.0,
-    "wind_speed": 3.5,
+    "lead": 27,
+    "temperature": 28.4,
+    "humidity": 85.0,
+    "rainfall": 0.1,
+    "wind_speed": 1.9,
     "rain_prob": 14.0
    },
    {
     "time": "2026-11-16T12:00",
-    "lead": 32,
-    "temperature": 29.9,
-    "humidity": 75.0,
-    "rainfall": 0.0,
-    "wind_speed": 3.4,
+    "lead": 28,
+    "temperature": 29.6,
+    "humidity": 80.0,
+    "rainfall": 0.3,
+    "wind_speed": 0.2,
     "rain_prob": 34.0
    },
    {
     "time": "2026-11-16T13:00",
-    "lead": 33,
-    "temperature": 29.5,
-    "humidity": 78.0,
-    "rainfall": 0.3,
-    "wind_speed": 5.1,
+    "lead": 29,
+    "temperature": 29.4,
+    "humidity": 81.0,
+    "rainfall": 0.5,
+    "wind_speed": 0.8,
     "rain_prob": 62.0
    },
    {
     "time": "2026-11-16T14:00",
-    "lead": 34,
-    "temperature": 26.8,
-    "humidity": 90.0,
-    "rainfall": 2.2,
-    "wind_speed": 6.7,
+    "lead": 30,
+    "temperature": 28.2,
+    "humidity": 88.0,
+    "rainfall": 1.1,
+    "wind_speed": 1.5,
     "rain_prob": 84.0
    },
    {
     "time": "2026-11-16T15:00",
-    "lead": 35,
-    "temperature": 26.1,
-    "humidity": 94.0,
-    "rainfall": 11.2,
-    "wind_speed": 3.1,
+    "lead": 31,
+    "temperature": 25.8,
+    "humidity": 93.0,
+    "rainfall": 11.5,
+    "wind_speed": 4.7,
     "rain_prob": 94.0
    },
    {
     "time": "2026-11-16T16:00",
-    "lead": 36,
+    "lead": 32,
     "temperature": 25.5,
-    "humidity": 96.0,
-    "rainfall": 5.2,
-    "wind_speed": 2.4,
+    "humidity": 98.0,
+    "rainfall": 3.4,
+    "wind_speed": 5.4,
     "rain_prob": 98.0
    },
    {
     "time": "2026-11-16T17:00",
-    "lead": 37,
-    "temperature": 25.4,
+    "lead": 33,
+    "temperature": 25.8,
     "humidity": 96.0,
-    "rainfall": 1.6,
-    "wind_speed": 2.3,
+    "rainfall": 0.7,
+    "wind_speed": 1.6,
     "rain_prob": 98.0
    },
    {
     "time": "2026-11-16T18:00",
-    "lead": 38,
-    "temperature": 25.7,
+    "lead": 34,
+    "temperature": 26.1,
     "humidity": 95.0,
-    "rainfall": 0.6,
-    "wind_speed": 3.4,
+    "rainfall": 0.3,
+    "wind_speed": 1.3,
     "rain_prob": 94.0
    },
    {
     "time": "2026-11-16T19:00",
-    "lead": 39,
-    "temperature": 25.3,
+    "lead": 35,
+    "temperature": 25.7,
     "humidity": 98.0,
-    "rainfall": 0.2,
-    "wind_speed": 2.3,
+    "rainfall": 0.0,
+    "wind_speed": 2.1,
     "rain_prob": 86.0
    },
    {
     "time": "2026-11-16T20:00",
-    "lead": 40,
-    "temperature": 25.4,
-    "humidity": 98.0,
-    "rainfall": 0.4,
-    "wind_speed": 3.8,
+    "lead": 36,
+    "temperature": 25.6,
+    "humidity": 97.0,
+    "rainfall": 0.0,
+    "wind_speed": 1.8,
     "rain_prob": 78.0
    },
    {
     "time": "2026-11-16T21:00",
-    "lead": 41,
+    "lead": 37,
     "temperature": 25.4,
     "humidity": 99.0,
-    "rainfall": 1.7,
-    "wind_speed": 2.6,
+    "rainfall": 0.5,
+    "wind_speed": 2.9,
     "rain_prob": 71.0
    },
    {
     "time": "2026-11-16T22:00",
-    "lead": 42,
-    "temperature": 25.3,
+    "lead": 38,
+    "temperature": 25.4,
     "humidity": 99.0,
     "rainfall": 0.2,
-    "wind_speed": 2.0,
+    "wind_speed": 2.4,
     "rain_prob": 63.0
    },
    {
     "time": "2026-11-16T23:00",
-    "lead": 43,
-    "temperature": 25.0,
+    "lead": 39,
+    "temperature": 25.2,
     "humidity": 99.0,
     "rainfall": 0.0,
-    "wind_speed": 2.9,
+    "wind_speed": 2.5,
     "rain_prob": 57.0
    },
    {
     "time": "2026-11-17T00:00",
-    "lead": 44,
-    "temperature": 25.0,
+    "lead": 40,
+    "temperature": 25.1,
     "humidity": 99.0,
-    "rainfall": 0.0,
-    "wind_speed": 2.3,
+    "rainfall": 0.4,
+    "wind_speed": 3.2,
     "rain_prob": 54.0
    },
    {
     "time": "2026-11-17T01:00",
-    "lead": 45,
-    "temperature": 24.9,
-    "humidity": 99.0,
-    "rainfall": 0.1,
-    "wind_speed": 0.9,
+    "lead": 41,
+    "temperature": 25.1,
+    "humidity": 97.0,
+    "rainfall": 0.2,
+    "wind_speed": 3.7,
     "rain_prob": 51.0
    },
    {
     "time": "2026-11-17T02:00",
-    "lead": 46,
-    "temperature": 24.7,
-    "humidity": 100.0,
+    "lead": 42,
+    "temperature": 25.1,
+    "humidity": 96.0,
     "rainfall": 0.0,
-    "wind_speed": 1.9,
+    "wind_speed": 1.0,
     "rain_prob": 49.0
    },
    {
     "time": "2026-11-17T03:00",
-    "lead": 47,
-    "temperature": 24.7,
-    "humidity": 100.0,
+    "lead": 43,
+    "temperature": 24.8,
+    "humidity": 98.0,
     "rainfall": 0.0,
-    "wind_speed": 5.3,
+    "wind_speed": 1.9,
     "rain_prob": 45.0
+   },
+   {
+    "time": "2026-11-17T04:00",
+    "lead": 44,
+    "temperature": 24.7,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 1.9,
+    "rain_prob": 41.0
+   },
+   {
+    "time": "2026-11-17T05:00",
+    "lead": 45,
+    "temperature": 24.5,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 4.1,
+    "rain_prob": 37.0
+   },
+   {
+    "time": "2026-11-17T06:00",
+    "lead": 46,
+    "temperature": 24.2,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 2.7,
+    "rain_prob": 34.0
+   },
+   {
+    "time": "2026-11-17T07:00",
+    "lead": 47,
+    "temperature": 24.2,
+    "humidity": 99.0,
+    "rainfall": 0.0,
+    "wind_speed": 2.5,
+    "rain_prob": 30.0
    }
   ]
  },
